@@ -1,0 +1,54 @@
+📋 Project Overview
+This is a beginner-friendly Streamlit project that allows users to securely store and retrieve data using a passkey.
+It uses basic encryption (Caesar cipher) and password hashing (SHA-256).
+The system operates completely in memory without needing any external database.
+
+🎯 Features
+Store secret data securely with a unique passkey.
+
+Retrieve and decrypt data by entering the correct passkey.
+
+After 3 wrong attempts, the user is redirected to a login page.
+
+Simple Login system for reauthorization.
+
+All data is stored temporarily during the session (no database).
+
+🔧 Technologies Used
+Python 3
+
+Streamlit (for UI)
+
+Hashlib (for passkey hashing)
+
+⚙️ How It Works
+On the Home Page, user can:
+
+Store new data
+
+Retrieve existing data
+
+To Store Data:
+
+Enter secret text and a passkey.
+
+Data is encrypted and saved with a hashed passkey.
+
+To Retrieve Data:
+
+Enter the stored passkey.
+
+If correct, data is decrypted and displayed.
+
+If wrong, failed attempts are counted.
+
+After 3 failed attempts → redirect to Login Page.
+
+Login Page:
+
+Enter Username: admin
+
+Enter Password: admin123
+
+After successful login, user can continue again.
+
