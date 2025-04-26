@@ -1,4 +1,3 @@
-
 import streamlit as st
 import hashlib
 from cryptography.fernet import Fernet
@@ -86,3 +85,5 @@ else:
                         st.session_state.authorized = False
             else:
                 st.error("Please enter a passkey.")
+
+
